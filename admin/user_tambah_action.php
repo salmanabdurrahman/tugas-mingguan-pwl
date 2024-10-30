@@ -17,9 +17,9 @@ include "../includes/config.php";
     $hasil = mysqli_query($config, $sql);
 
     if ($hasil) {
-        echo "<div class='alert alert-success'>Data berhasil ditambahkan</div>";
+        echo "<div class='alert alert-success' role='alert'>Data berhasil ditambahkan</div>";
     } else {
-        echo "<div class='alert alert-danger'>Data gagal disimpan</div>";
+        echo "<div class='alert alert-danger' role='alert'>Data gagal disimpan</div>";
     }
     ?>
     <br>

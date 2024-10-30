@@ -5,10 +5,13 @@ include "../includes/config.php";
 ?>
 
 <div class="container mt-5">
-    <p class="text-left">Anda Login Sebagai "<?php echo $_SESSION['username']; ?>" | Klik <a href="../pages/logout.php">disini</a> untuk logout.</p>
+    <p class="text-left">
+        Anda Login Sebagai "<?php echo $_SESSION['username']; ?>" | Klik <a href="../pages/logout.php">disini</a> untuk logout.
+    </p>
     <h3 class="text-left">Data Berita</h3>
-    <p class="text-left"><a href="berita_tambah.php" class="btn btn-primary">+ Tambah Berita</a></p>
-
+    <p class="text-left">
+        <a href="berita_tambah.php" class="btn btn-primary">+ Tambah Berita</a>
+    </p>
     <table class="table table-bordered">
         <thead class="thead-dark">
             <tr>
@@ -24,7 +27,6 @@ include "../includes/config.php";
             <?php
             $sql = "SELECT berita_id, berita_judul, berita_isi, berita_tanggal, berita_gambar FROM berita ORDER BY berita_id";
             $hasil = mysqli_query($config, $sql);
-
             $no = 1;
             while ($data = mysqli_fetch_array($hasil)) {
             ?>
@@ -47,6 +49,4 @@ include "../includes/config.php";
     </table>
 </div>
 
-<?php
-include "../includes/footer.php";
-?>
+<?php include "../includes/footer.php"; ?>

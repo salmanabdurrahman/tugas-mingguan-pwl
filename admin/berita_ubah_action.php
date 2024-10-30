@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "../includes/header.php";
 include "../includes/config.php";
 
@@ -6,13 +7,10 @@ $judul = $_POST["judul"];
 $isiberita = $_POST["isi"];
 $tgl_upload = $_POST["tanggal"];
 $usernama = $_POST["user_nama"];
-
 $lokasifile = $_FILES['gambar']['tmp_name'];
 $namafile = $_FILES['gambar']['name'];
-
 $uploaddir = "uploads/";
 $uploadfile = $uploaddir . basename($namafile);
-
 ?>
 
 <div class="container mt-5">
@@ -33,4 +31,4 @@ $uploadfile = $uploaddir . basename($namafile);
     <?php endif; ?>
 </div>
 
-<?php include "./includes/footer.php"; ?>
+<?php include "../includes/footer.php"; ?>

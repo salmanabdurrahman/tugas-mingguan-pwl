@@ -45,6 +45,4 @@ include "../includes/config.php";
     </table>
 </div>
 
-<?php
-include "../includes/footer.php";
-?>
+<?php include "../includes/footer.php"; ?>

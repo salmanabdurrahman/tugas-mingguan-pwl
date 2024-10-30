@@ -7,6 +7,7 @@ $sql = "SELECT * FROM user WHERE user_nama='$user'";
 $hasil = mysqli_query($config, $sql);
 $data = mysqli_fetch_assoc($hasil);
 ?>
+
 <div class="container mt-5">
     <h3 class="text-center">Ubah Data Username</h3>
     <form method="POST" action="user_edit_action.php">
@@ -34,5 +35,4 @@ $data = mysqli_fetch_assoc($hasil);
     </form>
 </div>
 
-<?php
-include "../includes/footer.php";
+<?php include "../includes/footer.php"; ?>

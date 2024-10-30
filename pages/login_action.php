@@ -16,11 +16,20 @@ if (mysqli_num_rows($hasil) > 0) {
         header('Location: welcome.php');
         exit();
     } else {
-        echo "<div class='alert alert-danger' role='alert'>Maaf, username atau password salah. <a href='login.php'>Klik disini</a> untuk kembali login.</div>";
+        echo "
+        <div class='container mt-5'>
+            <div class='alert alert-danger' role='alert'>
+                Maaf, username atau password salah. <a href='login.php'>Klik disini</a> untuk kembali login.
+            </div>
+        </div>";
     }
 } else {
-    echo "<div class='alert alert-danger' role='alert'>Maaf, username atau password salah. <a href='login.php'>Klik disini</a> untuk kembali login.</div>";
+    echo "
+    <div class='container mt-5'>
+        <div class='alert alert-danger' role='alert'>
+            Maaf, username atau password salah. <a href='login.php'>Klik disini</a> untuk kembali login.
+        </div>
+    </div>";
 }
-
 
 include "../includes/footer.php";

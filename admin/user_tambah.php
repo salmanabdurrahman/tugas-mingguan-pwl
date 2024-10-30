@@ -8,19 +8,19 @@ include "../includes/config.php";
     <form method="POST" action="user_tambah_action.php">
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username">
+            <input type="text" class="form-control" id="username" name="username" required>
         </div>
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password">
+            <input type="password" class="form-control" id="password" name="password" required>
         </div>
         <div class="form-group">
             <label for="namalengkap">Nama Lengkap</label>
-            <input type="text" class="form-control" id="namalengkap" name="namalengkap">
+            <input type="text" class="form-control" id="namalengkap" name="namalengkap" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email">
+            <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
         <button type="reset" class="btn btn-secondary">Batal</button>

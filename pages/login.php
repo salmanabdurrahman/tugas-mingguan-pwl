@@ -1,11 +1,12 @@
 <?php
 include "../includes/header.php";
 include "../includes/config.php";
+session_start();
 ?>
 
 <style>
     .container {
-        width: 600px;
+        max-width: 600px;
     }
 
     .login-page {
