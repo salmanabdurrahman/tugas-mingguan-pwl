@@ -8,7 +8,7 @@ include "../includes/config.php";
     <p class="text-center">
         <a href="user_tambah.php" class="btn btn-primary">+ Tambah User</a>
     </p>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-hover">
         <thead class="thead-dark">
             <tr>
                 <th>No.</th>

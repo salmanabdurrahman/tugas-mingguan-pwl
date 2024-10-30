@@ -13,7 +13,6 @@ include "../includes/config.php";
 
     $sql = "INSERT INTO user(user_nama, user_password, user_namalengkap, user_email)
             VALUES('$username','$pass','$nama','$email')";
-
     $hasil = mysqli_query($config, $sql);
 
     if ($hasil) {

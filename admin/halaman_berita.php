@@ -12,7 +12,7 @@ include "../includes/config.php";
     <p class="text-left">
         <a href="berita_tambah.php" class="btn btn-primary">+ Tambah Berita</a>
     </p>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-hover">
         <thead class="thead-dark">
             <tr>
                 <th>No.</th>

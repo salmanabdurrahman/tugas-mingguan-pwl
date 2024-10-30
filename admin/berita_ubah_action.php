@@ -19,7 +19,7 @@ $uploadfile = $uploaddir . basename($namafile);
             Nama File: <b><?php echo htmlspecialchars($namafile); ?></b> sukses di upload.
         </div>
         <?php
-        $sql = "INSERT INTO berita (berita_judul, berita_isi, berita_gambar, berita_tanggal, user_nama) 
+        $sql = "INSERT INTO berita (berita_judul, berita_isi, berita_gambar, berita_tanggal, user_nama)
                 VALUES ('$judul', '$isiberita', '$uploadfile', '$tgl_upload', '$usernama')";
         mysqli_query($config, $sql);
         header('Location: halaman_berita.php');

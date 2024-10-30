@@ -13,14 +13,17 @@ $hasil = mysqli_query($config, $sql);
         <div class="alert alert-success" role="alert">
             Data Berhasil Dihapus
         </div>
+        <div class="text-center mt-3">
+            <a href="halaman_berita.php" class="btn btn-primary">Kembali</a>
+        </div>
     <?php else: ?>
         <div class="alert alert-danger" role="alert">
             Data Gagal Dihapus
         </div>
+        <div class="text-center mt-3">
+            <a href="halaman_berita.php" class="btn btn-primary">Kembali</a>
+        </div>
     <?php endif; ?>
-    <div class="text-center mt-3">
-        <a href="halaman_berita.php" class="btn btn-primary">Kembali</a>
-    </div>
 </div>
 
 <?php include "../includes/footer.php"; ?>

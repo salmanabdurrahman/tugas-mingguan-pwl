@@ -22,8 +22,10 @@ include "../includes/config.php";
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
         </div>
-        <button type="submit" class="btn btn-primary">Simpan</button>
-        <button type="reset" class="btn btn-secondary">Batal</button>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="reset" class="btn btn-secondary">Batal</button>
+        </div>
     </form>
 </div>
 

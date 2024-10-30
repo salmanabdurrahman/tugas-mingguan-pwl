@@ -2,6 +2,11 @@
 session_start();
 include "../includes/header.php";
 include "../includes/config.php";
+
+$user = $_GET['user_nama'];
+$sql = "SELECT * FROM berita WHERE berita_id='$user'";
+$hasil = mysqli_query($config, $sql);
+$data = mysqli_fetch_assoc($hasil);
 ?>
 
 <div class="container mt-5">

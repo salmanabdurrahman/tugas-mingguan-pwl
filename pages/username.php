@@ -9,9 +9,9 @@ $query = mysqli_query($config, $sql);
 echo "<div class='container mt-5'>";
 echo "<div class='row'>";
 echo "<div class='col-md-12'>";
-echo "<h2 class='text-center'>Data User</h2>";
-echo "<table class='table table-striped'>";
-echo "<thead>";
+echo "<h2 class='text-center display-4'>Data User</h2>";
+echo "<table class='table table-striped table-hover'>";
+echo "<thead class='thead-dark'>";
 echo "<tr>";
 echo "<th>ID</th>";
 echo "<th>Username</th>";
@@ -21,7 +21,6 @@ echo "<th>Level</th>";
 echo "</tr>";
 echo "</thead>";
 echo "<tbody>";
-
 while ($row = mysqli_fetch_assoc($query)) {
     echo "<tr>";
     echo "<td>" . $row['id'] . "</td>";
@@ -31,7 +30,6 @@ while ($row = mysqli_fetch_assoc($query)) {
     echo "<td>" . $row['level'] . "</td>";
     echo "</tr>";
 }
-
 echo "</tbody>";
 echo "</table>";
 echo "</div>";

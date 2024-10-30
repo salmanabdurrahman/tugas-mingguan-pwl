@@ -1,6 +1,7 @@
 <?php
 include "../includes/header.php";
 include "../includes/config.php";
+session_start();
 
 $user = $_GET['user_nama'];
 $sql = "SELECT * FROM user WHERE user_nama='$user'";

@@ -15,7 +15,7 @@ $uploadfile = $uploaddir . $namafile;
 
 <div class="container mt-5">
     <?php if (move_uploaded_file($lokasifile, $uploadfile)) {
-        $sql = "INSERT INTO berita (berita_judul, berita_isi, berita_gambar, berita_tanggal, user_nama) 
+        $sql = "INSERT INTO berita (berita_judul, berita_isi, berita_gambar, berita_tanggal, user_nama)
                 VALUES ('$judul', '$isiberita', '$uploadfile', '$tgl_upload', '$usernama')";
         $hasil = mysqli_query($config, $sql);
         header('location: halaman_berita.php');
