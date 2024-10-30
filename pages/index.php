@@ -1,13 +1,8 @@
 <?php
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
-    exit();
-}
-
 include "../includes/header.php";
 include "../includes/config.php";
+
+
 ?>
 
 <style>
@@ -58,4 +53,5 @@ include "../includes/config.php";
     </div>
 </div>
 
-<?php include "../includes/footer.php"; ?>
+<?php
+include "../includes/footer.php";
