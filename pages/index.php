@@ -1,6 +1,11 @@
 <?php
+session_start();
+if (isset($_SESSION["username"])) {
+
 include "../includes/header.php";
 include "../includes/config.php";
+
+
 ?>
 <style>
     .jumbotron {
@@ -48,3 +53,7 @@ include "../includes/config.php";
 
 <?php
 include "../includes/footer.php";
+    } else {
+        header("Location: login.php");
+        exit();
+    }
